@@ -10,11 +10,41 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
-.title_fz26 {
+.header_fz26 {
     text-align: center;
     font-size: 26px;
     font-weight: 700;
+    text-transform: uppercase;
+}
+hr {
+    width: 148px;
+    height: 1px;
+    background-color: var(--mc);
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.subheader_fz21 {
+    color: #2e2e2e;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 17px;
+}
+.header_min {
+    color: var(--mc);
+    font-family: "Roboto - Bold";
+    font-size: 16px;
+    font-weight: 700;
+    align-self: end;
+}
+:root {
+    --mc: #ec644b;
 }
 @import 'blocks/btns';
 @import 'blocks/promo';
 @import 'blocks/advantages';
+@import 'blocks/ourwork';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/scheme';

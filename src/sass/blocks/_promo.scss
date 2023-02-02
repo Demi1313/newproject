@@ -1,7 +1,9 @@
 .promo {
-    min-height: 600px;
-    padding: 23px 0 82px 0;
+    min-height: 680px;
     background: url("../img/bg.jpg") center/cover no-repeat;
+    .container {
+        padding: 23px 0 82px 0;
+    }
     &__title {
         margin-top: 10px;
         text-align: center;
@@ -12,7 +14,7 @@
     &__header {
         margin-top: 25px;
         text-align: center;
-        color: #ec644b;
+        color: var(--mc);
         font-size: 72px;
         line-height: 65px;
         font-weight: 700;
@@ -87,8 +89,6 @@
         margin-top: 15px;
     }
     &__btn {
-        display: block;
-        margin: 0 auto;
         margin-top: 50px;
         width: 230px;
         height: 57px;
@@ -125,10 +125,20 @@
         a {
             text-decoration: none;
             color: #ffffff;
+            display: block;
+            text-align: center;
+            width: fit-content;
+            transition: .3s;
+            background: linear-gradient(to right, #ffffff, #ff9e55,#ff9e55, #ec644b);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
             &:hover {
                 padding-bottom: 5px;
-                border-bottom: 2px solid #ec644b;
-                color: #ec644b;
+                // border-bottom: 2px solid #ec644b;
+                color: var(--mc);
+                background-size: 100% 2px;
+
             }
         }
     }

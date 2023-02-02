@@ -1,0 +1,27 @@
+.ourwork {
+    padding-top: 57px;
+    &__wrapper {
+        margin-top: 27px;
+        display: grid;
+        grid-template: minmax(370px,auto)/repeat(3,minmax(100px, auto));
+        column-gap: 30px;
+    }
+    &__item {
+        text-align: center;
+        &__img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &__header {
+            margin-top: 28px;
+            font-size: 18px;
+        }
+        &__descr {
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: "Roboto - Light";
+            font-weight: 300;
+            font-style: normal;
+        }
+    }
+}
