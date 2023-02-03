@@ -3,40 +3,46 @@
         padding-top: 51px;
     }
     .carousel {
-        display: flex;
-        justify-content: center;
         margin-top: 30px;
+        padding: 10px;
     }
     &__slider {
-        width: 600px;
         text-align: center;
         position: relative;
+        &__item {
+            padding-top: 55px;
+            opacity: 0.2; 
+        }
         .slick-next.slick-arrow {
+            position: absolute;
+            display: block;
+            background: url("../../icons/right.png");
+            width: 14px;
+            height: 46px;
+            top: 25%;
+            right: 41%;
             &::before {
-                content: "";
-                display: block;
-                background: url("../../icons/right.png");
-                width: 14px;
-                height: 46px;
-                position: absolute;
-                bottom: 120px;
-                right: 200px;
+                display: none;
             }
         }
         .slick-prev.slick-arrow {
+            position: absolute;
+            display: block;
+            background: url("../../icons/left.png");
+            width: 14px;
+            height: 46px;
+            top: 25%;
+            left: 41%;
+            z-index: 2;
             &::before {
-                content: "";
-                display: block;
-                background: url("../../icons/left.png");
-                width: 14px;
-                height: 46px;
-                position: absolute;
-                bottom: 120px;
-                left: 200px;
+                display: none;
             }
-        }
-        &__item {
-            
+        } 
+        .slick-center {
+            transition: all .3s;
+            transform: scale(1.4);
+            opacity: 1;
+            height: 300px;
         }
         img {
             display: block;
@@ -47,8 +53,9 @@
             object-fit: cover;
         }
         &__descr {
+            margin: 0 auto;
             margin-top: 10px;
-            max-width: 600px;
+            min-width: 360px;
         }
     }
 }
