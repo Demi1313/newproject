@@ -1,0 +1,54 @@
+.reviews {
+    .container {
+        padding-top: 51px;
+    }
+    .carousel {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &__slider {
+        width: 600px;
+        text-align: center;
+        position: relative;
+        .slick-next.slick-arrow {
+            &::before {
+                content: "";
+                display: block;
+                background: url("../../icons/right.png");
+                width: 14px;
+                height: 46px;
+                position: absolute;
+                bottom: 120px;
+                right: 200px;
+            }
+        }
+        .slick-prev.slick-arrow {
+            &::before {
+                content: "";
+                display: block;
+                background: url("../../icons/left.png");
+                width: 14px;
+                height: 46px;
+                position: absolute;
+                bottom: 120px;
+                left: 200px;
+            }
+        }
+        &__item {
+            
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+            width: 115px;
+            height: 115px;
+            object-fit: cover;
+        }
+        &__descr {
+            margin-top: 10px;
+            max-width: 600px;
+        }
+    }
+}
