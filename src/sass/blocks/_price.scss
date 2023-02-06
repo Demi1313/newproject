@@ -70,7 +70,7 @@
         &__labelicon {
             position: absolute;
             background-color: #fff;
-            top: -32%;
+            top: -23%;
             width: 118px;
         }
         &__icon {
@@ -109,7 +109,10 @@
             font-weight: 300;
             line-height: 24px;
             text-align: left;
-            margin-right: 10px
+            margin-right: 10px;
+            &:nth-child(3) {
+                margin-right: 0;
+            }
        }
     }
     

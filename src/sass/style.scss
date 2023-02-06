@@ -9,6 +9,7 @@ html {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .header_fz26 {
     text-align: center;
@@ -56,3 +57,5 @@ hr {
 @import 'blocks/price';
 @import 'blocks/scheme';
 @import 'blocks/reviews';
+@import 'blocks/writetous';
+@import 'blocks/footer';

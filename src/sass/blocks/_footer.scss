@@ -1,0 +1,87 @@
+.footer {
+    background-color: #25333c;
+    min-height: 700px;
+    &__map {
+        position: relative;
+        text-align: center;
+        &__leg {
+            position: absolute;
+            width: 330px;
+            height: 160px;
+            top: 45%;
+            left: 51%;
+            background: url("../../img/bg-map.png") center/cover no-repeat;
+            z-index: 10;
+        }
+        &__descr {
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            color: #3a3a3a;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+        span {
+            display: block;
+            color: var(--mc);
+            font-family: "Roboto - Bold";
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: -10px;
+        }
+        a {
+            display: block;
+            margin-top: 5px;
+            color: var(--mc);
+            font-size: 14px;
+            font-family: "Roboto - Light";
+            font-weight: 300;
+        }
+    }
+    &__up {
+        margin-top: 20px;
+        justify-content: space-between;
+        &__logo {
+            width: 68px;
+            height: 71px;
+        }
+        &__title {
+            margin-top: 30px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            margin-right: 200px;
+        }
+    }
+    hr {
+        margin: 0;
+        width: 1171px;
+        height: 1px;
+        opacity: 0.3;
+        background-color: white;
+    }
+    &__down {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 150px 200px 100px;
+        justify-content: space-between;
+        opacity: 0.6;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 17px;
+        &__title {
+            position: relative;
+            &:nth-child(2) {
+                color: var(--mc);
+                text-decoration: underline;
+            }
+            img {
+                position: absolute;
+                top: -10px;
+                right: -35px;
+            }
+        }
+    }
+}

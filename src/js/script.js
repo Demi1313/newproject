@@ -6,6 +6,7 @@ $(document).ready(function(){
       slidesToShow: 3, 
       centerMode: true,
       centerPadding: '5px',
+      variableWidth: true
   });
 
 });

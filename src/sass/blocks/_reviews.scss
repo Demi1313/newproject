@@ -1,4 +1,5 @@
 .reviews {
+    min-height: 555px;
     .container {
         padding-top: 51px;
     }
@@ -10,8 +11,9 @@
         text-align: center;
         position: relative;
         &__item {
-            padding-top: 55px;
+            padding: 55px 45px 0 45px;
             opacity: 0.2; 
+            transform: scale(0.8);
         }
         .slick-next.slick-arrow {
             position: absolute;
@@ -42,6 +44,7 @@
             transition: all .3s;
             transform: scale(1.4);
             opacity: 1;
+            min-width: 600px;
             height: 300px;
         }
         img {
