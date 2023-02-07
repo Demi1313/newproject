@@ -1,0 +1,213 @@
+@media (max-width:1200px) {
+    .footer {
+        &__up {
+            justify-content: space-around;
+            &__title {
+                &:nth-child(2) {
+                    margin-right: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__down {
+            justify-content: space-around;
+        }
+        hr {
+            width: 900px;
+        }
+    }
+    .reviews {
+        &__slider {
+            .slick-next.slick-arrow {
+                right: 35%;
+                top: 28%;
+                
+            }
+            .slick-prev.slick-arrow {
+                left: 35%;
+                top: 28%;
+            } 
+            .slick-center {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .promo {
+        &__subheader {
+            &::after {
+                top: 135px;
+            }
+        }
+        &__item {
+            align-self: baseline;
+        }
+    }
+    .writetous {
+        &__form {
+            min-width: 740px;
+        }
+    }
+    .footer {
+        hr {
+            width: 700px;
+        }
+    }
+}
+@media (max-width:768px) {
+    .header {
+        &__link {
+            font-size: 12px;
+        }
+    }
+    .promo {
+        &__descr {
+            font-size: 14px;
+        }
+    }
+    .writetous {
+        &__form {
+            min-width: 550px;
+        }
+    }
+    .price {
+        &__form__round {
+            border: none;
+        }
+        &__input {
+            input {
+                &:nth-child(3) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        &__map {
+            &__leg {
+                width: 220px;
+                background: url(../../img/bg-map.png) no-repeat;
+            }
+            &__descr {
+                top: 10px;
+                left: 22px;
+            }
+        }
+        hr {
+            width: 550px;
+        }
+        &__down {
+            grid-template-columns: 150px 250px 150px;
+            &__title {
+                position: relative;
+                &:nth-child(2) {
+                    text-align: center;
+                }
+                &:last-child {
+                    text-align: unset;
+                }
+            }
+        }
+    }
+    .reviews {
+        &__slider {
+            .slick-center {
+                transform: scale(0.9);
+                height: auto;
+            }
+        }
+    }
+}
+@media (max-width:576px) {
+    .header {
+        &__menu {
+            padding: 0;
+        }
+        &__link {
+            font-size: 9.5px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+        }
+        &__phone {
+            font-size: 13px;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 50px;
+        }
+        &__subheader {
+            &::after {
+                display: none;
+            }
+        }
+        &__item {
+            align-self: auto;
+        }
+        &__descr {
+            font-size: 8px;
+        }
+    }
+    .advantages {
+        &__grid {
+            grid-template: repeat(4, auto)/repeat(1, auto);
+        }
+    }
+    .ourwork {
+        &__wrapper {
+            grid-template: minmax(370px, auto)/repeat(1, minmax(100px, auto));
+            gap: 30px;
+        }
+    }
+    .agent__subheader {
+        font-size: 10px;
+    }
+    .price {
+        &__input {
+            input {
+                width: 220px;
+            }
+        }
+    }
+    .reviews {
+        .carousel {
+            margin: 0;
+        }
+        &__slider {
+            .slick-center {
+                transform: scale(0.45);
+            }
+        }
+    }
+    .writetous {
+        &__form {
+            min-width: 280px;
+            textarea {
+                margin-right: 10px;
+            }
+        }
+    }
+    .footer {
+        &__map {
+            &__leg {
+                display: none;
+            }
+        } 
+        hr {
+            width: 280px;
+        }
+        &__down {
+            grid-template-columns: 200px;
+            &__title {
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:last-child {
+                    display: none;
+                }
+            }
+        }     
+    }
+}

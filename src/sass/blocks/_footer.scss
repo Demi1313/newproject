@@ -1,6 +1,9 @@
 .footer {
     background-color: #25333c;
     min-height: 700px;
+    .container {
+        padding: 5px 15px;
+    }
     &__map {
         position: relative;
         text-align: center;
@@ -38,6 +41,18 @@
             font-family: "Roboto - Light";
             font-weight: 300;
         }
+        &__close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 41px;
+            line-height: 21px;
+            color: var(--mc);
+            cursor: pointer;
+            &:hover {
+                box-shadow: 3px 3px 20px #dc5238;;
+            }
+        }
     }
     &__up {
         margin-top: 20px;
@@ -55,8 +70,8 @@
         }
     }
     hr {
-        margin: 0;
-        width: 1171px;
+        margin: 0 auto;
+        width: 1130px;
         height: 1px;
         opacity: 0.3;
         background-color: white;
@@ -64,7 +79,7 @@
     &__down {
         margin-top: 30px;
         display: grid;
-        grid-template-columns: 150px 200px 100px;
+        grid-template-columns: 200px 200px 200px;
         justify-content: space-between;
         opacity: 0.6;
         color: #ffffff;
@@ -77,10 +92,13 @@
                 color: var(--mc);
                 text-decoration: underline;
             }
+            &:last-child {
+                text-align: center;
+            }
             img {
                 position: absolute;
                 top: -10px;
-                right: -35px;
+                right: 10px;
             }
         }
     }
